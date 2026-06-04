@@ -1,0 +1,14 @@
+/* 全体に適用するcss */
+html {
+    /* 1remを10pxに設定 */
+    font-size: 62.5%;
+}
+
+body {
+    /* 基本のフォントサイズを16pxに設定 */
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 100%;
+}
