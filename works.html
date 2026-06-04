@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onodera Portfolio - スキル</title>
+    <link rel="stylesheet" href="./css/destyle.css">
+    <link rel="stylesheet" href="./css/allstyle.css">
+    <link rel="stylesheet" href="./css/works.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <h1>Onodera Portfolio</h1>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="works_page-title">
+                <h2>制作実績</h2>
+            </div>
+
+            <section class="works">
+                <!-- 絞込ボタン -->
+                <div class="worksPage_works_filter">
+                    <button class="worksPage_works_filter_button">webアプリ</button>
+                    <button class="worksPage_works_filter_button">デザイン</button>
+                    <button class="worksPage_works_filter_button">HP</button>
+                </div>
+
+                <!-- 制作実績 -->
+                <div class="works_work">
+                    <!-- Project 1: エーデルワイン -->
+                    <a href="works-edel.html" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/works/edel-3.png" alt="エーデルワイン・サポート様コーポレートサイト制作">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">エーデルワイン・サポート様コーポレートサイト制作</p>
+                            <p class="works_work_box_text_detail">WordPressを用いたコーポレートサイト制作</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">WordPress</p>
+                                <p class="works_work_box_text_skills_skill">mysql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 2: 休講情報管理アプリ -->
+                    <a href="works-classcancel.html" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/top/top.jpg" alt="休講情報管理アプリ">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">休講情報管理アプリ</p>
+                            <p class="works_work_box_text_detail">休講情報をカレンダー形式で見やすくしたアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">java Spring Boot</p>
+                                <p class="works_work_box_text_skills_skill">java</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 3: 学内専用匿名チャットアプリ -->
+                    <a href="works-chat.html" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/top/top.jpg" alt="学内専用匿名チャットアプリ">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">学内専用匿名チャットアプリ</p>
+                            <p class="works_work_box_text_detail">学内専用の匿名チャットアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">flask</p>
+                                <p class="works_work_box_text_skills_skill">python</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 4: todoアプリ -->
+                    <a href="#" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/top/top.jpg" alt="todoアプリ">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">todoアプリ</p>
+                            <p class="works_work_box_text_detail">todoを管理するアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 5: 休講情報管理アプリ（重複） -->
+                    <a href="#" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/top/top.jpg" alt="休講情報管理アプリ">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">休講情報管理アプリ</p>
+                            <p class="works_work_box_text_detail">休講情報をカレンダー形式で見やすくしたアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">java Spring Boot</p>
+                                <p class="works_work_box_text_skills_skill">java</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 6: 休講情報管理アプリ（重複） -->
+                    <a href="#" class="works_work_box">
+                        <img class="works_work_box_img" src="./img/top/top.jpg" alt="休講情報管理アプリ">
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">休講情報管理アプリ</p>
+                            <p class="works_work_box_text_detail">休講情報をカレンダー形式で見やすくしたアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <p class="works_work_box_text_skills_skill">java Spring Boot</p>
+                                <p class="works_work_box_text_skills_skill">java</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OnoderaYuuma. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // ヘッダー要素を取得
+        const header = document.getElementById('header');
+
+        // スクロールイベントを監視
+        window.addEventListener('scroll', () => {
+            // 70px以上スクロールした場合
+            if (window.scrollY > 70) {
+                header.classList.add('is-transparent'); // 透明にするクラスを追加
+            } else {
+                header.classList.remove('is-transparent'); // クラスを削除（元の色に戻す）
+            }
+        });
+    </script>
+</body>
+</html>
