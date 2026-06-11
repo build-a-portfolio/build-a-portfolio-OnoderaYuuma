@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     color: #333;
     max-width: 100%;
+}
+
+main {
     margin-top: 70px;
 }
 
