@@ -15,11 +15,25 @@
     <header class="header" id="header">
         <h1>Onodera Portfolio</h1>
         <nav class="header_nav">
-            <ul>
+            <ul class="header_nav_list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="works.html">Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- ハンバーガーボタン -->
+            <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <!-- スライドインするメニューリンク -->
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="./works.html">Works</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -324,19 +338,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        // ヘッダー要素を取得
-        const header = document.getElementById('header');
-
-        // スクロールイベントを監視
-        window.addEventListener('scroll', () => {
-            // 70px以上スクロールした場合
-            if (window.scrollY > 70) {
-                header.classList.add('is-transparent'); // 透明にするクラスを追加
-            } else {
-                header.classList.remove('is-transparent'); // クラスを削除（元の色に戻す）
-            }
-        });
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
