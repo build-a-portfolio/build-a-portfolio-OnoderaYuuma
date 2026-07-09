@@ -6,7 +6,7 @@
     padding: 3rem 10%;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient(to right, #EA6AF5, #4C64FF);
+    background-image: linear-gradient(to right, #ea6af5, #4c64ff);
 }
 
 .contactPage_title h2 {
@@ -18,7 +18,7 @@
     contactPage content
 *******************/
 body {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
 }
 
 .contactPage_form {
@@ -51,7 +51,7 @@ body {
     width: 60%;
     padding: 10px;
     margin: 0 auto;
-    background-color: #2563EB;
+    background-color: #2563eb;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -99,4 +99,22 @@ body {
 .contactPage_contact_content a {
     font-size: 1.2rem;
     color: blue;
+}
+
+/*
+    レスポンシブ
+*/
+
+/* 768px以下 */
+@media screen and (max-width: 768px) {
+    .contactPage_title h2 {
+        font-size: 3rem;
+    }
+    .contactPage_form {
+        width: 90%;
+    }
+    .contactPage_contact {
+        width: 90%;
+        flex-direction: column;
+    }
 }
