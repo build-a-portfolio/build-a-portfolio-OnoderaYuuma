@@ -69,7 +69,6 @@
     about me
 *******************/
 .aboutMe {
-    height: 550px;
     padding: 5vh 10%;
 }
 
@@ -320,4 +319,83 @@ progress::-webkit-progress-bar {
     font-size: 1.4rem;
     font-weight: bold;
     margin: 0 auto;
+}
+
+/* レスポンシブ対応(スマホ) */
+@media screen and (max-width: 767px) {
+    .header h1 {
+        font-size: 2.4rem;
+    }
+
+    .header_nav_list {
+        display: none;
+    }
+    
+    .hello_title {
+        font-size: 3rem;
+    }
+    
+    .hello_link {
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        gap: 3vh;
+    }
+
+    .hello_link_button-work,
+    .hello_link_button-contact {
+        width: auto;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    /*
+        about me
+    */
+    .aboutMe_content {
+        flex-direction: column;
+    }
+    .aboutMe_content_profile {
+        padding: 0;
+        width: 100%;
+        gap: 1rem;
+    }
+    .aboutMe_content_profile p {
+        text-align: center;
+    }
+    .aboutMe_content_profile-svgText {
+        margin: 0 auto;
+    }
+
+    /*
+        works
+    */
+    .works_work {
+        flex-direction: column;
+    }
+    .works_work_box {
+        width: 100%;
+    }
+    .works_link {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /*
+        skills
+    */
+    .skills_content {
+        flex-direction: column;
+    }
+    .skillsPage_skills_list_container {
+        width: 100%;
+    }
+    .skills_link {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+
 }
