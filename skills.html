@@ -1,343 +1,321 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onodera Portfolio - スキル</title>
-    <link rel="stylesheet" href="./css/destyle.css">
-    <link rel="stylesheet" href="./css/allstyle.css">
-    <link rel="stylesheet" href="./css/skills.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Onodera Portfolio - スキル</title>
+        <link rel="stylesheet" href="./css/destyle.css" />
+        <link rel="stylesheet" href="./css/allstyle.css" />
+        <link rel="stylesheet" href="./css/skills.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h1>Onodera Portfolio</h1>
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- ハンバーガーボタン -->
+                <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <header class="header" id="header">
-        <h1>Onodera Portfolio</h1>
-        <nav class="header_nav">
-            <ul class="header_nav_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <!-- ハンバーガーボタン -->
-            <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-    
-            <!-- スライドインするメニューリンク -->
-            <ul class="nav-links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="./works.html">Works</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+                <!-- スライドインするメニューリンク -->
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <div>
-            <div class="skillsPage_title">
-                <h2>スキル一覧</h2>
+        <main>
+            <div>
+                <div class="skillsPage_title">
+                    <h2>スキル一覧</h2>
+                </div>
+
+                <section class="skillsPage_skills">
+                    <!-- 絞込ボタン -->
+                    <div class="skillsPage_skills_filter">
+                        <button class="skillsPage_skills_filter_button" id="all_btn">全て</button>
+                        <button class="skillsPage_skills_filter_button" id="gengo_btn">言語</button>
+                        <button class="skillsPage_skills_filter_button" id="framework_btn">フレームワーク</button>
+                        <button class="skillsPage_skills_filter_button" id="tool_btn">ツール</button>
+                        <button class="skillsPage_skills_filter_button" id="db_btn">DB</button>
+                    </div>
+
+                    <div class="skillsPage_skills_list">
+                        <!-- React -->
+                        <div class="skillsPage_skills_list_container framework">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/react.png" alt="react" />
+                            </div>
+                            <p class="skillsPage_skills_name">react</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-3">上級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>85%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-3" value="85" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>3年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Reactを使用したフロントエンド開発に精通しており、コンポーネントベースの設計や状態管理に強みがあります。複雑なUIの構築やパフォーマンス最適化にも対応可能です。</p>
+                        </div>
+
+                        <!-- Laravel -->
+                        <div class="skillsPage_skills_list_container framework">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/laravel.png" alt="Laravel" />
+                            </div>
+                            <p class="skillsPage_skills_name">Laravel</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>75%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Laravelを用いたバックエンド開発に豊富な経験があり、MVCアーキテクチャやEloquent ORMを活用した効率的な開発が可能です。API構築やセキュリティ対策にも対応しています。</p>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="skillsPage_skills_list_container gengo">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/python.png" alt="Python" />
+                            </div>
+                            <p class="skillsPage_skills_name">Python</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>70%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Pythonを用いたデータ分析や自動化ツールの開発に経験があり、効率的なコード作成と問題解決能力を備えています。</p>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skillsPage_skills_list_container gengo">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/js.png" alt="JavaScript" />
+                            </div>
+                            <p class="skillsPage_skills_name">JavaScript</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-3">上級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>90%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>3年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">JavaScriptを使用したフロントエンド開発に精通しており、動的なユーザーインターフェースの構築やパフォーマンス最適化に強みがあります。</p>
+                        </div>
+
+                        <!-- HTML/CSS -->
+                        <div class="skillsPage_skills_list_container gengo">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/html.png" alt="HTML/CSS" />
+                            </div>
+                            <p class="skillsPage_skills_name">HTML/CSS</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-3">上級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>95%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-3" value="95" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>4年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">HTMLとCSSを用いたレスポンシブデザインやアクセシビリティに配慮したウェブページの作成に豊富な経験があります。</p>
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="skillsPage_skills_list_container gengo">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/php.png" alt="PHP" />
+                            </div>
+                            <p class="skillsPage_skills_name">PHP</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>70%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">PHPを用いたサーバーサイド開発に経験があり、Laravelフレームワークを活用した効率的な開発が可能です。セキュリティ対策やデータベース操作にも対応しています。</p>
+                        </div>
+
+                        <!-- Figma -->
+                        <div class="skillsPage_skills_list_container tool">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/figma.png" alt="Figma" />
+                            </div>
+                            <p class="skillsPage_skills_name">Figma</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>75%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Figmaを用いたUI/UXデザインに経験があり、チームでの共同作業やプロトタイピングにも対応可能です。デザインシステムの構築にも関心を持っています。</p>
+                        </div>
+
+                        <!-- Git -->
+                        <div class="skillsPage_skills_list_container tool">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/git.png" alt="Git" />
+                            </div>
+                            <p class="skillsPage_skills_name">Git/GitHub</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-3">上級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>90%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>4年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Gitを使用したバージョン管理に精通しており、チームでの効率的なコード管理とコラボレーションに強みがあります。ブランチ戦略やマージの経験も豊富です。</p>
+                        </div>
+
+                        <!-- Java -->
+                        <div class="skillsPage_skills_list_container gengo">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/java.png" alt="Java" />
+                            </div>
+                            <p class="skillsPage_skills_name">Java</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>75%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">Javaを用いたオブジェクト指向プログラミングに経験があり、Springフレームワークを活用したWebアプリケーション開発にも対応可能です。</p>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="skillsPage_skills_list_container db">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/mysql.png" alt="MySQL" />
+                            </div>
+                            <p class="skillsPage_skills_name">MySQL</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>70%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">リレーショナルデータベース設計、クエリ最適化、インデックス設計など。</p>
+                        </div>
+
+                        <!-- docker -->
+                        <div class="skillsPage_skills_list_container tool">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/docker.png" alt="docker" />
+                            </div>
+                            <p class="skillsPage_skills_name">docker</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">初級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>30%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>1年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">開発環境の統一、アプリのデプロイに使用。</p>
+                        </div>
+                        <!-- PostgreSQL -->
+                        <div class="skillsPage_skills_list_container db">
+                            <div class="skillsPage_skills_icon">
+                                <img src="./img/skills/postgresql.png" alt="PostgreSQL" />
+                            </div>
+                            <p class="skillsPage_skills_name">PostgreSQL</p>
+                            <div class="skillsPage_skills_level_container">
+                                <p class="skillsPage_skills_level-2">中級</p>
+                            </div>
+                            <div class="skillsPage_skills_details">
+                                <p>習熟度</p>
+                                <p>70%</p>
+                            </div>
+                            <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                            <div class="skillsPage_skills_experience">
+                                <p>経験年数</p>
+                                <p>2年</p>
+                            </div>
+                            <p class="skillsPage_skills_description">リレーショナルデータベース設計、クエリ最適化、インデックス設計など。</p>
+                        </div>
+                    </div>
+                </section>
             </div>
+        </main>
 
-            <section class="skillsPage_skills">
-                <!-- 絞込ボタン -->
-                <div class="skillsPage_skills_filter">
-                    <button class="skillsPage_skills_filter_button">言語</button>
-                    <button class="skillsPage_skills_filter_button">フレームワーク</button>
-                    <button class="skillsPage_skills_filter_button">ツール</button>
-                </div>
+        <footer>
+            <p>&copy; 2024 OnoderaYuuma. All rights reserved.</p>
+        </footer>
 
-                <div class="skillsPage_skills_list">
-                    <!-- React -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/react.png" alt="react">
-                        </div>
-                        <p class="skillsPage_skills_name">react</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-3">上級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>85%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-3" value="85" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>3年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Reactを使用したフロントエンド開発に精通しており、コンポーネントベースの設計や状態管理に強みがあります。複雑なUIの構築やパフォーマンス最適化にも対応可能です。
-                        </p>
-                    </div>
-
-                    <!-- Laravel -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/laravel.png" alt="Laravel">
-                        </div>
-                        <p class="skillsPage_skills_name">Laravel</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>75%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Laravelを用いたバックエンド開発に豊富な経験があり、MVCアーキテクチャやEloquent ORMを活用した効率的な開発が可能です。API構築やセキュリティ対策にも対応しています。
-                        </p>
-                    </div>
-
-                    <!-- Python -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/python.png" alt="Python">
-                        </div>
-                        <p class="skillsPage_skills_name">Python</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>70%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Pythonを用いたデータ分析や自動化ツールの開発に経験があり、効率的なコード作成と問題解決能力を備えています。
-                        </p>
-                    </div>
-
-                    <!-- JavaScript -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/js.png" alt="JavaScript">
-                        </div>
-                        <p class="skillsPage_skills_name">JavaScript</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-3">上級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>90%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>3年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            JavaScriptを使用したフロントエンド開発に精通しており、動的なユーザーインターフェースの構築やパフォーマンス最適化に強みがあります。
-                        </p>
-                    </div>
-
-                    <!-- HTML/CSS -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/html.png" alt="HTML/CSS">
-                        </div>
-                        <p class="skillsPage_skills_name">HTML/CSS</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-3">上級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>95%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-3" value="95" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>4年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            HTMLとCSSを用いたレスポンシブデザインやアクセシビリティに配慮したウェブページの作成に豊富な経験があります。
-                        </p>
-                    </div>
-
-                    <!-- PHP -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/php.png" alt="PHP">
-                        </div>
-                        <p class="skillsPage_skills_name">PHP</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>70%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            PHPを用いたサーバーサイド開発に経験があり、Laravelフレームワークを活用した効率的な開発が可能です。セキュリティ対策やデータベース操作にも対応しています。
-                        </p>
-                    </div>
-
-                    <!-- Figma -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/figma.png" alt="Figma">
-                        </div>
-                        <p class="skillsPage_skills_name">Figma</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>75%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Figmaを用いたUI/UXデザインに経験があり、チームでの共同作業やプロトタイピングにも対応可能です。デザインシステムの構築にも関心を持っています。
-                        </p>
-                    </div>
-
-                    <!-- Git -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/git.png" alt="Git">
-                        </div>
-                        <p class="skillsPage_skills_name">Git/GitHub</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-3">上級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>90%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>4年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Gitを使用したバージョン管理に精通しており、チームでの効率的なコード管理とコラボレーションに強みがあります。ブランチ戦略やマージの経験も豊富です。
-                        </p>
-                    </div>
-
-                    <!-- Java -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/java.png" alt="Java">
-                        </div>
-                        <p class="skillsPage_skills_name">Java</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>75%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            Javaを用いたオブジェクト指向プログラミングに経験があり、Springフレームワークを活用したWebアプリケーション開発にも対応可能です。
-                        </p>
-                    </div>
-
-                    <!-- MySQL -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/mysql.png" alt="MySQL">
-                        </div>
-                        <p class="skillsPage_skills_name">MySQL</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>70%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="70" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            リレーショナルデータベース設計、クエリ最適化、インデックス設計など。
-                        </p>
-                    </div>
-
-                    <!-- docker -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/docker.png" alt="docker">
-                        </div>
-                        <p class="skillsPage_skills_name">docker</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">初級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>30%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>1年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            開発環境の統一、アプリのデプロイに使用。
-                        </p>
-                    </div>
-                    <!-- PostgreSQL -->
-                    <div class="skillsPage_skills_list_container">
-                        <div class="skillsPage_skills_icon">
-                            <img src="./img/skills/postgresql.png" alt="PostgreSQL">
-                        </div>
-                        <p class="skillsPage_skills_name">PostgreSQL</p>
-                        <div class="skillsPage_skills_level_container">
-                            <p class="skillsPage_skills_level-2">中級</p>
-                        </div>
-                        <div class="skillsPage_skills_details">
-                            <p>習熟度</p>
-                            <p>70%</p>
-                        </div>
-                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                        <div class="skillsPage_skills_experience">
-                            <p>経験年数</p>
-                            <p>2年</p>
-                        </div>
-                        <p class="skillsPage_skills_description">
-                            リレーショナルデータベース設計、クエリ最適化、インデックス設計など。
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 OnoderaYuuma. All rights reserved.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/index.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/skills.js"></script>
+    </body>
 </html>
