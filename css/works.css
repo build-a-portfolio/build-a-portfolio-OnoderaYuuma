@@ -130,4 +130,7 @@
     .works_work_box {
         width: 100%;
     }
+    .works {
+        padding: 3rem 5%;
+    }
 }
