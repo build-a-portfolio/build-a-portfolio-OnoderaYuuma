@@ -14,10 +14,9 @@
     padding: 5vh 10%;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient(to right, #4C64FF, #EA6AF5);
-    
+    background-image: linear-gradient(to right, #4c64ff, #ea6af5);
 }
-.works_page-title h2{
+.works_page-title h2 {
     font-size: 4rem;
     font-weight: bold;
 }
@@ -37,17 +36,17 @@
 }
 .worksPage_works_filter_button {
     background-color: #fff;
-    color: #2563EB;
+    color: #2563eb;
     padding: 5px 30px;
     text-align: center;
     text-decoration: none;
-    border: #2563EB 2px solid;
+    border: #2563eb 2px solid;
     border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;
 }
 .worksPage_works_filter_button:active {
-    background-color: #2563EB;
+    background-color: #2563eb;
     color: #fff;
     padding: 15px 30px;
     text-align: center;
@@ -57,7 +56,6 @@
     font-size: 1.4rem;
     font-weight: bold;
 }
-
 
 .works_work_box {
     /* border: 1px solid #000; */
@@ -94,12 +92,12 @@
     flex-wrap: wrap;
 }
 .works_work_box_text_skills_skill {
-    background-color: #DBEAFE;
+    background-color: #dbeafe;
     padding: 2px 8px;
     margin: 2px;
     border-radius: 10px;
     font-size: 1rem;
-    color: #5B59E4;
+    color: #5b59e4;
 }
 .works_work_box_text_links {
     /* display: inline-block; */
@@ -112,4 +110,24 @@
     gap: 5%;
     justify-content: center;
     /* flex-wrap: wrap; */
+}
+
+/*
+    レスポンシブ
+*/
+@media screen and (max-width: 768px) {
+    .works_page-title h2 {
+        font-size: 3rem;
+    }
+    .worksPage_works_filter {
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .worksPage_works_filter_button {
+        font-size: 1.4rem;
+    }
+    .works_work_box {
+        width: 100%;
+    }
 }
