@@ -75,8 +75,8 @@
     margin-bottom: 1rem;
 }
 .work-detail-tag {
-    background-color: #DBEAFE;
-    color: #2D6BCB;
+    background-color: #dbeafe;
+    color: #2d6bcb;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
@@ -90,8 +90,8 @@
     width: 45%;
     /* background-color: #4C64FF; */
     border-radius: 10px;
-    color: #4C64FF;
-    border: #4C64FF 3px solid;
+    color: #4c64ff;
+    border: #4c64ff 3px solid;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -109,5 +109,37 @@
     padding: 2rem 0 0 2.5%;
     display: block;
     text-align: left;
-    color: #4C64FF;
+    color: #4c64ff;
+}
+
+/*
+    レスポンシブ
+*/
+@media screen and (max-width: 768px) {
+    .work-detail-link-back {
+        display: none;
+    }
+    .work-detail-content {
+        flex-direction: column;
+    }
+    .work-detail-image {
+        width: 100%;
+    }
+    .image-slider-for img {
+        height: 250px;
+        margin: 0 auto;
+    }
+    .image-slider-nav img {
+        width: 100px;
+        height: 60px;
+    }
+    .work-detail-info {
+        width: 100%;
+    }
+    .image-slider-for {
+        width: 100%;
+    }
+    .image-slider-nav {
+        width: 100%;
+    }
 }
