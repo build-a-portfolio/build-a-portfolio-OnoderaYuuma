@@ -111,10 +111,11 @@ body {
         font-size: 3rem;
     }
     .contactPage_form {
-        width: 90%;
+        width: 92%;
+        padding: 2rem 6%;
     }
     .contactPage_contact {
-        width: 90%;
+        width: 92%;
         flex-direction: column;
     }
 }
