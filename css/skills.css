@@ -176,4 +176,7 @@ progress::-webkit-progress-bar {
     .skillsPage_skills_list_container {
         width: 100%;
     }
+    .skillsPage_skills {
+        padding: 3rem 5%;
+    }
 }
