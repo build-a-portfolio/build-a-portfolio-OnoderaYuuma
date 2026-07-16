@@ -118,4 +118,7 @@ body {
         width: 92%;
         flex-direction: column;
     }
+    .contactPage_form_submit {
+        width: 100%;
+    }
 }
