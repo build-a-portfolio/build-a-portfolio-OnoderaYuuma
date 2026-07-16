@@ -1,222 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/allstyle.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/responsive.css"/>
-</head>
-<body>
-    <header class="header" id="header">
-        <h1>Onodera Portfolio</h1>
-        <nav class="header_nav">
-            <ul class="header_nav_list">
-                <li><a href="/">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <!-- ハンバーガーボタン -->
-            <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-    
-            <!-- スライドインするメニューリンク -->
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="./skills.html">Skills</a></li>
-                <li><a href="./works.html">Works</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="stylesheet" href="css/allstyle.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h1>Onodera Portfolio</h1>
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- ハンバーガーボタン -->
+                <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <main>
-        <!-- top-hero -->
-        <section class="hello">
-            <h2 class="hello_title">Onodera <span>Portfolio</span></h2>
-            <div class="hello_link">
-                <a class="hello_link_button-work" href="works.html">制作実績を見る</a>
-                <a class="hello_link_button-contact" href="contact.html">お問い合わせ</a>
-            </div>
-        </section>
+                <!-- スライドインするメニューリンク -->
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- 自己紹介 -->
-        <section class="aboutMe">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>フルスタックエンジニアとしてフロントエンドからバックエンドまで<br>幅広い技術領域をカバーしています。</p>
-            </div>
-            <div class="aboutMe_content">
-                <img class="aboutMe_content_img" src="./img/index/icon.png" alt="">
-                <div class="aboutMe_content_profile">
-                    <p class="aboutMe_content_profile-name">小野寺 悠真</p>
-                    <p>フロントからバックまで幅広くこなす<br>webエンジニア志望の学生です。</p>
-                    <div class="aboutMe_content_profile-svgText">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"></path></svg>
-                        <p>岩手県、日本</p>
-                    </div>
-                    <div class="aboutMe_content_profile-svgText">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15 3C15.5523 3 16 3.44772 16 4V6H21C21.5523 6 22 6.44772 22 7V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7C2 6.44772 2.44772 6 3 6H8V4C8 3.44772 8.44772 3 9 3H15ZM16 8H8V19H16V8ZM4 8V19H6V8H4ZM14 5H10V6H14V5ZM18 8V19H20V8H18Z"></path></svg>
-                        <p>フルスタックエンジニア</p>
-                    </div>
-                    <div class="aboutMe_content_profile-svgText">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path></svg>
-                        <p>経験年数：未経験</p>
-                    </div>
+        <main>
+            <!-- top-hero -->
+            <section class="hello">
+                <h2 class="hello_title">Onodera <span>Portfolio</span></h2>
+                <div class="hello_link">
+                    <a class="hello_link_button-work" href="works.html">制作実績を見る</a>
+                    <a class="hello_link_button-contact" href="contact.html">お問い合わせ</a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="works">
-            <!-- 制作実績 -->
-            <div class="section-title">
-                <h2>Featured Works</h2>
-                <p>これまでに手掛けた代表的な制作実績を紹介します。</p>
-            </div>
-            <div class="works_work">
-                <a href="works-edel.html" class="works_work_box">
-                    <!-- サムネイル画像 -->
-                    <img class="works_work_box_img" src="./img/works/edelwein.png" alt="">
-                    <div class="works_work_box_text">
-                        <p class="works_work_box_text_title">エーデルワイン・サポート様コーポレートサイト制作</p>
-                        <p class="works_work_box_text_detail">WordPressを用いたコーポレートサイト制作</p>
-                        <div class="works_work_box_text_skills">
-                            <!-- 使用技術 -->
-                            <p class="works_work_box_text_skills_skill">WordPress</p>
-                            <p class="works_work_box_text_skills_skill">mysql</p>
-                            <p class="works_work_box_text_skills_skill">javascript</p>
-                            <p class="works_work_box_text_skills_skill">html/css</p>
+            <!-- 自己紹介 -->
+            <section class="aboutMe">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>フルスタックエンジニアとしてフロントエンドからバックエンドまで<br />幅広い技術領域をカバーしています。</p>
+                </div>
+                <div class="aboutMe_content">
+                    <img class="aboutMe_content_img" src="./img/index/icon.png" alt="" />
+                    <div class="aboutMe_content_profile">
+                        <p class="aboutMe_content_profile-name">小野寺 悠真</p>
+                        <p>フロントからバックまで幅広くこなす<br />webエンジニア志望の学生です。</p>
+                        <div class="aboutMe_content_profile-svgText">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"></path></svg>
+                            <p>岩手県、日本</p>
                         </div>
-                        <p class="works_work_box_text_links">クリックで詳細を表示</p>
-                    </div>
-                </a>
-                <a href="works-classcancel.html" class="works_work_box">
-                    <!-- サムネイル画像 -->
-                    <img class="works_work_box_img" src="./img/index/top-hero.jpg" alt="">
-                    <div class="works_work_box_text">
-                        <p class="works_work_box_text_title">休講情報管理アプリ</p>
-                        <p class="works_work_box_text_detail">休講情報をカレンダー形式で見やすくしたアプリ</p>
-                        <div class="works_work_box_text_skills">
-                            <!-- 使用技術 -->
-                            <p class="works_work_box_text_skills_skill">java Spring Boot</p>
-                            <p class="works_work_box_text_skills_skill">java</p>
-                            <p class="works_work_box_text_skills_skill">postgresql</p>
-                            <p class="works_work_box_text_skills_skill">javascript</p>
-                            <p class="works_work_box_text_skills_skill">html/css</p>
+                        <div class="aboutMe_content_profile-svgText">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15 3C15.5523 3 16 3.44772 16 4V6H21C21.5523 6 22 6.44772 22 7V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7C2 6.44772 2.44772 6 3 6H8V4C8 3.44772 8.44772 3 9 3H15ZM16 8H8V19H16V8ZM4 8V19H6V8H4ZM14 5H10V6H14V5ZM18 8V19H20V8H18Z"></path></svg>
+                            <p>フルスタックエンジニア</p>
                         </div>
-                        <p class="works_work_box_text_links">クリックで詳細を表示</p>
-                    </div>
-                </a>
-                <a href="works-chat.html" class="works_work_box">
-                    <!-- サムネイル画像 -->
-                    <img class="works_work_box_img" src="./img/works/chat.png" alt="">
-                    <div class="works_work_box_text">
-                        <p class="works_work_box_text_title">学内専用匿名チャットアプリ</p>
-                        <p class="works_work_box_text_detail">学内専用の匿名チャットアプリ</p>
-                        <div class="works_work_box_text_skills">
-                            <!-- 使用技術 -->
-                            <p class="works_work_box_text_skills_skill">flask</p>
-                            <p class="works_work_box_text_skills_skill">python</p>
-                            <p class="works_work_box_text_skills_skill">postgresql</p>
-                            <p class="works_work_box_text_skills_skill">javascript</p>
-                            <p class="works_work_box_text_skills_skill">html/css</p>
+                        <div class="aboutMe_content_profile-svgText">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path></svg>
+                            <p>経験年数：未経験</p>
                         </div>
-                        <p class="works_work_box_text_links">クリックで詳細を表示</p>
                     </div>
-                </a>
-            </div>
-            <a href="works.html" class="works_link">すべての制作実績を見る</a>
-        </section>
-
-        <section class="skills">
-            <!-- スキルセット -->
-            <div class="section-title">
-                <h2>Skills</h2>
-                <p>現代的な技術スタックを駆使して、<br>高品質なWebアプリケーションを開発します。</p>
-            </div>
-            <div class="skills_content">
-                <div class="skillsPage_skills_list_container">
-                    <div class="skillsPage_skills_icon">
-                        <img src="./img/skills/react.png" alt="react">
-                    </div>
-                    <p class="skillsPage_skills_name">react</p>
-                    <div class="skillsPage_skills_level_container">
-                        <p class="skillsPage_skills_level-3">上級</p>
-                    </div>
-                    <div class="skillsPage_skills_details">
-                        <p>習熟度</p>
-                        <p>85%</p>
-                    </div>
-                    <progress class="skillsPage_skills_progress-3" value="85" max="100"></progress>
-                    <div class="skillsPage_skills_experience">
-                        <p>経験年数</p>
-                        <p>3年</p>
-                    </div>
-                    <p class="skillsPage_skills_description">
-                        Reactを使用したフロントエンド開発に精通しており、コンポーネントベースの設計や状態管理に強みがあります。複雑なUIの構築やパフォーマンス最適化にも対応可能です。
-                    </p>
                 </div>
-                <!-- Java -->
-                <div class="skillsPage_skills_list_container">
-                    <div class="skillsPage_skills_icon">
-                        <img src="./img/skills/java.png" alt="Java">
-                    </div>
-                    <p class="skillsPage_skills_name">Java</p>
-                    <div class="skillsPage_skills_level_container">
-                        <p class="skillsPage_skills_level-2">中級</p>
-                    </div>
-                    <div class="skillsPage_skills_details">
-                        <p>習熟度</p>
-                        <p>75%</p>
-                    </div>
-                    <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
-                    <div class="skillsPage_skills_experience">
-                        <p>経験年数</p>
-                        <p>2年</p>
-                    </div>
-                    <p class="skillsPage_skills_description">
-                        Javaを用いたオブジェクト指向プログラミングに経験があり、Springフレームワークを活用したWebアプリケーション開発にも対応可能です。
-                    </p>
+            </section>
+
+            <section class="works">
+                <!-- 制作実績 -->
+                <div class="section-title">
+                    <h2>Featured Works</h2>
+                    <p>これまでに手掛けた代表的な制作実績を紹介します。</p>
                 </div>
-                <!-- Git -->
-                <div class="skillsPage_skills_list_container">
-                    <div class="skillsPage_skills_icon">
-                        <img src="./img/skills/git.png" alt="Git">
-                    </div>
-                    <p class="skillsPage_skills_name">Git/GitHub</p>
-                    <div class="skillsPage_skills_level_container">
-                        <p class="skillsPage_skills_level-3">上級</p>
-                    </div>
-                    <div class="skillsPage_skills_details">
-                        <p>習熟度</p>
-                        <p>90%</p>
-                    </div>
-                    <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
-                    <div class="skillsPage_skills_experience">
-                        <p>経験年数</p>
-                        <p>4年</p>
-                    </div>
-                    <p class="skillsPage_skills_description">
-                        GitHubを使用したバージョン管理に精通しており、チームでの効率的なコード管理とコラボレーションに強みがあります。ブランチ戦略やマージの経験も豊富です。
-                    </p>
+                <div class="works_work">
+                    <a href="works-edel.html" class="works_work_box">
+                        <!-- サムネイル画像 -->
+                        <img class="works_work_box_img" src="./img/works/edelwein.png" alt="" />
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">エーデルワイン・サポート様コーポレートサイト制作</p>
+                            <p class="works_work_box_text_detail">WordPressを用いたコーポレートサイト制作</p>
+                            <div class="works_work_box_text_skills">
+                                <!-- 使用技術 -->
+                                <p class="works_work_box_text_skills_skill">WordPress</p>
+                                <p class="works_work_box_text_skills_skill">mysql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+                    <a href="works-classcancel.html" class="works_work_box">
+                        <!-- サムネイル画像 -->
+                        <img class="works_work_box_img" src="./img/index/top-hero.jpg" alt="" />
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">休講情報管理アプリ</p>
+                            <p class="works_work_box_text_detail">休講情報をカレンダー形式で見やすくしたアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <!-- 使用技術 -->
+                                <p class="works_work_box_text_skills_skill">java Spring Boot</p>
+                                <p class="works_work_box_text_skills_skill">java</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
+                    <a href="works-chat.html" class="works_work_box">
+                        <!-- サムネイル画像 -->
+                        <img class="works_work_box_img" src="./img/works/chat.png" alt="" />
+                        <div class="works_work_box_text">
+                            <p class="works_work_box_text_title">学内専用匿名チャットアプリ</p>
+                            <p class="works_work_box_text_detail">学内専用の匿名チャットアプリ</p>
+                            <div class="works_work_box_text_skills">
+                                <!-- 使用技術 -->
+                                <p class="works_work_box_text_skills_skill">flask</p>
+                                <p class="works_work_box_text_skills_skill">python</p>
+                                <p class="works_work_box_text_skills_skill">postgresql</p>
+                                <p class="works_work_box_text_skills_skill">javascript</p>
+                                <p class="works_work_box_text_skills_skill">html/css</p>
+                            </div>
+                            <p class="works_work_box_text_links">クリックで詳細を表示</p>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <a href="skills.html" class="skills_link">すべての習得技術を見る</a>
-        </section>
+                <a href="works.html" class="works_link">すべての制作実績を見る</a>
+            </section>
 
-        
-    </main>
+            <section class="skills">
+                <!-- スキルセット -->
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>現代的な技術スタックを駆使して、<br />高品質なWebアプリケーションを開発します。</p>
+                </div>
+                <div class="skills_content">
+                    <div class="skillsPage_skills_list_container">
+                        <div class="skillsPage_skills_icon">
+                            <img src="./img/skills/react.png" alt="react" />
+                        </div>
+                        <p class="skillsPage_skills_name">react</p>
+                        <div class="skillsPage_skills_level_container">
+                            <p class="skillsPage_skills_level-3">上級</p>
+                        </div>
+                        <div class="skillsPage_skills_details">
+                            <p>習熟度</p>
+                            <p>85%</p>
+                        </div>
+                        <progress class="skillsPage_skills_progress-3" value="85" max="100"></progress>
+                        <div class="skillsPage_skills_experience">
+                            <p>経験年数</p>
+                            <p>3年</p>
+                        </div>
+                        <p class="skillsPage_skills_description">Reactを使用したフロントエンド開発に精通しており、コンポーネントベースの設計や状態管理に強みがあります。複雑なUIの構築やパフォーマンス最適化にも対応可能です。</p>
+                    </div>
+                    <!-- Java -->
+                    <div class="skillsPage_skills_list_container">
+                        <div class="skillsPage_skills_icon">
+                            <img src="./img/skills/java.png" alt="Java" />
+                        </div>
+                        <p class="skillsPage_skills_name">Java</p>
+                        <div class="skillsPage_skills_level_container">
+                            <p class="skillsPage_skills_level-2">中級</p>
+                        </div>
+                        <div class="skillsPage_skills_details">
+                            <p>習熟度</p>
+                            <p>75%</p>
+                        </div>
+                        <progress class="skillsPage_skills_progress-2" value="75" max="100"></progress>
+                        <div class="skillsPage_skills_experience">
+                            <p>経験年数</p>
+                            <p>2年</p>
+                        </div>
+                        <p class="skillsPage_skills_description">Javaを用いたオブジェクト指向プログラミングに経験があり、Springフレームワークを活用したWebアプリケーション開発にも対応可能です。</p>
+                    </div>
+                    <!-- Git -->
+                    <div class="skillsPage_skills_list_container">
+                        <div class="skillsPage_skills_icon">
+                            <img src="./img/skills/git.png" alt="Git" />
+                        </div>
+                        <p class="skillsPage_skills_name">Git/GitHub</p>
+                        <div class="skillsPage_skills_level_container">
+                            <p class="skillsPage_skills_level-3">上級</p>
+                        </div>
+                        <div class="skillsPage_skills_details">
+                            <p>習熟度</p>
+                            <p>90%</p>
+                        </div>
+                        <progress class="skillsPage_skills_progress-3" value="90" max="100"></progress>
+                        <div class="skillsPage_skills_experience">
+                            <p>経験年数</p>
+                            <p>4年</p>
+                        </div>
+                        <p class="skillsPage_skills_description">GitHubを使用したバージョン管理に精通しており、チームでの効率的なコード管理とコラボレーションに強みがあります。ブランチ戦略やマージの経験も豊富です。</p>
+                    </div>
+                </div>
+                <a href="skills.html" class="skills_link">すべての習得技術を見る</a>
+            </section>
+        </main>
 
-    <footer>
-        <p class="">&copy;2026 Onodera Portfolio All rights reserved</p>
-    </footer>
+        <footer>
+            <p class="">&copy;2026 Onodera Portfolio All rights reserved</p>
+        </footer>
 
-    <script src="./js/index.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>

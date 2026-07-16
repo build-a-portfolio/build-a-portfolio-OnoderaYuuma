@@ -37,20 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-$(function () {
-    $(".image-slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".image-slider-nav",
+if (window.jQuery) {
+    $(function () {
+        $(".image-slider-for").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: ".image-slider-nav",
+        });
+        $(".image-slider-nav").slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: ".image-slider-for",
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+        });
     });
-    $(".image-slider-nav").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: ".image-slider-for",
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-    });
-});
+} else {
+    console.warn("jQuery is not loaded; image slider is skipped.");
+}
