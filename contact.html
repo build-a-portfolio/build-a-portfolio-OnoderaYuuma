@@ -10,35 +10,9 @@
         <link rel="stylesheet" href="./css/contact.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function () {
-                // https://dashboard.emailjs.com/admin/account
-                emailjs.init("JPwewp9w9vkcRLA6F");
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function () {
-                document.getElementById("contact-form").addEventListener("submit", function (event) {
-                    event.preventDefault();
-                    // generate a five digit number for the contact_number variable
-                    this.contact_number.value = (Math.random() * 100000) | 0;
-                    // these IDs from the previous steps
-                    emailjs.sendForm("service_tbbfmrd", "template_o3ryyfp", this).then(
-                        function () {
-                            console.log("SUCCESS!");
-                        },
-                        function (error) {
-                            console.log("FAILED...", error);
-                        },
-                        // 送信の成功・失敗に関わらずフォームの中身をリセットする
-                        function () {
-                            this.reset();
-                        },
-                    );
-                });
-            };
-        </script>
+        <script src="./js/contact.js"></script>
     </head>
     <body>
         <header class="header" id="header">
@@ -78,22 +52,22 @@
                 <section class="contactPage_form">
                     <div class="contactPage_form_box">
                         <p class="contactPage_form_title">お名前</p>
-                        <input class="contactPage_form_input" type="text" name="name" />
+                        <input class="contactPage_form_input" type="text" name="name" required />
                     </div>
 
                     <div class="contactPage_form_box">
                         <p class="contactPage_form_title">メールアドレス</p>
-                        <input class="contactPage_form_input" type="email" name="email" />
+                        <input class="contactPage_form_input" type="email" name="email" required />
                     </div>
 
                     <div class="contactPage_form_box">
                         <p class="contactPage_form_title">件名</p>
-                        <input class="contactPage_form_input" type="text" name="subject" />
+                        <input class="contactPage_form_input" type="text" name="subject" required />
                     </div>
 
                     <div class="contactPage_form_box">
                         <p class="contactPage_form_title">メッセージ</p>
-                        <textarea class="contactPage_form_textarea" name="message"></textarea>
+                        <textarea class="contactPage_form_textarea" name="message" required></textarea>
                     </div>
                     <input class="contactPage_form_submit" type="submit" value="送信" />
                 </section>
@@ -124,6 +98,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
