@@ -34,7 +34,7 @@
     font-size: 1.4rem;
     font-weight: bold;
 }
-.active {
+.skillsPage_skills_filter_button.active {
     background-color: #2563eb;
     color: #fff;
     padding: 15px 30px;
