@@ -417,4 +417,25 @@ progress::-webkit-progress-bar {
         width: 300px;
         margin: 0 auto;
     }
+
+    .kaisetu_table,
+    .kaisetu_table tbody,
+    .kaisetu_table tr,
+    .kaisetu_table th,
+    .kaisetu_table td {
+        display: block;
+        width: 100%;
+    }
+
+    .kaisetu_table tr {
+        margin-bottom: 1.5rem;
+    }
+
+    .kaisetu_table th {
+        padding-bottom: 0.5rem;
+    }
+
+    .kaisetu_table td {
+        padding-top: 0;
+    }
 }
