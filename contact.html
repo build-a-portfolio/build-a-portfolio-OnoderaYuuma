@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OnoderaYuuma Portfolio</title>
+
+        <link rel="stylesheet" href="./css/destyle.css" />
+        <link rel="stylesheet" href="./css/allstyle.css" />
+        <link rel="stylesheet" href="./css/contact.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="./js/contact.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h1>Onodera Portfolio</h1>
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- ハンバーガーボタン -->
+                <button class="hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- スライドインするメニューリンク -->
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contactPage">
+                <div class="contactPage_title">
+                    <h2>お問い合わせ</h2>
+                </div>
+            </div>
+
+            <form action="" method="post" id="contact-form">
+                <section class="contactPage_form">
+                    <div class="contactPage_form_box">
+                        <p class="contactPage_form_title">お名前</p>
+                        <input class="contactPage_form_input" type="text" name="name" required />
+                    </div>
+
+                    <div class="contactPage_form_box">
+                        <p class="contactPage_form_title">メールアドレス</p>
+                        <input class="contactPage_form_input" type="email" name="email" required />
+                    </div>
+
+                    <div class="contactPage_form_box">
+                        <p class="contactPage_form_title">件名</p>
+                        <input class="contactPage_form_input" type="text" name="subject" required />
+                    </div>
+
+                    <div class="contactPage_form_box">
+                        <p class="contactPage_form_title">メッセージ</p>
+                        <textarea class="contactPage_form_textarea" name="message" required></textarea>
+                    </div>
+                    <input class="contactPage_form_submit" type="submit" value="送信" />
+                </section>
+                <input type="hidden" name="contact_number" />
+            </form>
+
+            <section class="contactPage_contact">
+                <div class="contactPage_contact_email">
+                    <p class="contactPage_contact_title">送信先メールアドレス</p>
+                    <div class="contactPage_contact_content">
+                        <img class="contactPage_contact_img" src="./img/contact/email.png" alt="email" />
+                        <p>y.onodera.sys23@morijyobi.ac.jp</p>
+                    </div>
+                </div>
+                <div class="contactPage_contact_other">
+                    <p class="contactPage_contact_title">その他アカウント</p>
+                    <div class="contactPage_contact_content">
+                        <img class="contactPage_contact_img" src="./img/skills/git.png" alt="github" />
+                        <a href="https://github.com/OnoderaYuuma">https://github.com/OnoderaYuuma</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Onodera. All rights reserved.</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

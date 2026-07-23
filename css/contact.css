@@ -1,0 +1,135 @@
+/******************
+    contactPage
+*******************/
+.contactPage_title {
+    width: 100%;
+    padding: 3rem 10%;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #ea6af5, #4c64ff);
+}
+
+.contactPage_title h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/******************
+    contactPage content
+*******************/
+body {
+    background-color: #f3f3f3;
+}
+
+.contactPage_form {
+    width: 700px;
+    margin: 3rem auto;
+    padding: 2rem 10%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactPage_form_title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contactPage_form_box.is-invalid .contactPage_form_title {
+    color: #dc2626;
+}
+
+.contactPage_form_box.is-invalid .contactPage_form_input,
+.contactPage_form_box.is-invalid .contactPage_form_textarea {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+    background-color: #fff5f5;
+}
+
+.contactPage_form_input,
+.contactPage_form_textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contactPage_form_submit {
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* form下の連絡先 */
+.contactPage_contact {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contactPage_contact_email,
+.contactPage_contact_other {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactPage_contact_title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contactPage_contact_content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactPage_contact_img {
+    width: 40px;
+    background-color: #f9fafb;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contactPage_contact_content p,
+.contactPage_contact_content a {
+    font-size: 1.2rem;
+    color: blue;
+}
+
+/*
+    レスポンシブ
+*/
+
+/* 768px以下 */
+@media screen and (max-width: 768px) {
+    .contactPage_title h2 {
+        font-size: 3rem;
+    }
+    .contactPage_form {
+        width: 92%;
+        padding: 2rem 6%;
+    }
+    .contactPage_contact {
+        width: 92%;
+        flex-direction: column;
+    }
+    .contactPage_form_submit {
+        width: 100%;
+    }
+}
