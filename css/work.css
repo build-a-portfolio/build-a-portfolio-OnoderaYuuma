@@ -74,12 +74,24 @@
     font-weight: bold;
     margin-bottom: 1rem;
 }
+.work-detail-tags-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 .work-detail-tag {
     background-color: #dbeafe;
     color: #2d6bcb;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
+}
+.work-detail-link-github {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
 }
 .work-detail-links {
     padding-top: 2rem;
